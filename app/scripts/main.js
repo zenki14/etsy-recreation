@@ -1,4 +1,4 @@
-var steak = [{
+var daftPunk = [{
   "results": [
 
 {  
@@ -3880,9 +3880,9 @@ var steak = [{
 }
 ];
 
-var itemGrid = $('.itemGrid'), item_image, item_title, item_shop, item_price, item_currency, steak_listing, hover_img;
+var itemGrid = $('.itemGrid'), item_image, item_title, item_shop, item_price, item_currency, daftPunk_listing, hover_img;
 
-steak.forEach(function (item) {
+daftPunk.forEach(function (item) {
 
   item_title = "<p class='nameText'>" + item.title + "</p>";
 
@@ -3900,9 +3900,9 @@ steak.forEach(function (item) {
   item_currency = "<p class='isRight'>" + item.currency_code + "</p>";
 
   // Build Each Listing
-  steak_listing = "<li class='mainProducts'>" + item_image + hover_img + item_title + item_shop + item_currency + item_price +  "</li>";
+  daftPunk_listing = "<li class='mainProducts'>" + item_image + hover_img + item_title + item_shop + item_currency + item_price +  "</li>";
 
   // Append Each Item to The Grid
-  itemGrid.append(steak_listing);
+  itemGrid.append(daftPunk_listing);
 
 });
