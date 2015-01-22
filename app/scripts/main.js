@@ -1,27 +1,30 @@
+var itemGrid, itemImage, itemTitle, itemShop, itemPrice, itemCurrency;
 
-var itemGrid = $('.itemGrid'), item_image, item_title, item_shop, item_price, item_currency, daftPunk_listing, hover_img;
+// , daftListing, hoverImg;
 
-daftPunk.forEach(function (item) {
+itemContainer = $('.itemGrid')
 
-  item_title = "<p class='nameText'>" + item.title + "</p>";
+etsyItems.results.forEach(function (item) {
 
-  item.Images.forEach(function(pics) {
-      item_image = "<img class='productImgs' src='" + pics.url_fullxfull + "' />'";
+  itemTitle = "<p class='nameText'>" + item.title + "</p>";
+
+  item.Images.forEach(function (pics) {
+      itemImage = "<img class='productImgs' src='" + pics.url_fullxfull + "' />'";
     });
 
   hover_img = "<div class='foodBox'><img class='heart' src='https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2008/assets/heart.png' />" + "<img class='hamburger' src='https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2008/assets/hamburger.png' /></div>";
 
-  item_shop = "<span class='shopTitle'>" + item.Shop.shop_name + "</span>";
+  itemShop = "<span class='shopTitle'>" + item.Shop.shop_name + "</span>";
 
-  item_price = "<p class='isRight'>" + item.price + "</p>";
+  itemPrice = "<p class='isRight'>" + item.price + "</p>";
 
 
-  item_currency = "<p class='isRight'>" + item.currency_code + "</p>";
+  itemCurrency = "<p class='isRight'>" + item.currency_code + "</p>";
 
   // Build Each Listing
-  daftPunk_listing = "<li class='mainProducts'>" + item_image + hover_img + item_title + item_shop + item_currency + item_price +  "</li>";
+  daft_listing = "<li class='mainProducts'>" + itemImage + hoverImg + itemTitle + itemShop + itemCurrency + itemPrice +  "</li>";
 
   // Append Each Item to The Grid
-  itemGrid.append(daftPunk_listing);
+  itemGrid.append(daftListing);
 
 });
