@@ -24,12 +24,15 @@
       <div class="mainContent">
         <div class="sideBar">
           <p>Item Type</p>
-            <ul class="circleButtons">
-              <li>All Items</li>
-              <li>Handmade</li>
-              <li>Vintage</li>
-              <li>Craft Supplies</li>
-            </ul>
+            <form class="circleButtons" method="GET">
+             <input type="radio" value="allItems" name="type" /> All Items
+             <br>
+             <input type="radio" value="handmade" name="type"> Handmade
+             <br>
+             <input type="radio" value="vintage" name="type"> Vintage
+             <br>
+             <input type="radio" value="craftSupplies" name="type"> Craft Supplies
+            </form>
             <hr />
           <p>Categories</p>
             <span>Handmade</span>
@@ -74,24 +77,39 @@
               <div class="purpleBox"></div>
               <div class="blackBox"></div>
               <div class="whiteBox"></div>
-
-
             </div>
           </div>
           <hr />
           <div class="orderOptions">
             <span class="orderOptionTxt">Ordering Options</span>
+            <br>
             <input type="checkbox" name="giftCards" /> Accepts Etsy Gift Cards
+            <br>
             <input type="checkbox" name="customizable" /> Customizable
           </div>
           <hr />
           <div class="shopLoc">
             <span class="locTxt">Shop Location</span>
-            <input type="radio" name="anywhere" /> Anywhere
-            <input type="radio" name="unitedStates" /> United States
+            <br>
+            <input type="radio" name="shoploc" /> Anywhere
+            <br>
+            <input type="radio" name="shoploc" /> United States
+            <br>
             <a class="customLoc" href="#">Choose a custom location</a>
           </div>
           <hr />
+          <div class="shipsTo">
+            <span>Ships To</span>
+            <a href="#">Clear</a>
+            <br>
+            <select name="shipToList" id="countryList">
+              <option value="here">Here</option>
+              <option value="there">There</option>
+
+
+            </select>
+
+          </div>
           
 
 
@@ -102,6 +120,72 @@
         <ul class="itemGrid">
         </ul>
       </div>
+
+      <footer class="footerContainer">
+        <div class="outerFooter">
+          <div class="innerFooter">
+            <div class="footerContent">
+              <div class="footer-column wide">
+                <div class="leftFirstColumn">
+                  <div class="passionBusiness">
+                    <h4>Turn Your Passion Into a Business</h4>
+                    <button>Open a Shop</button>
+                  </div>
+                  <div class="sellOnEtsy">
+                    <h4>Sell on Etsy</h4>
+                    <a href="#">Seller Handbook</a>
+                    <a href="#">Etsy Credit Card Reader</a>
+                  </div>
+                </div>
+                <div class="joinTheCommunity">
+                  <div class="joinCommunity">
+                    <h4>Join the Community</h4>
+                    <a href="#">Teams</a>
+                    <a href="#">Forums</a>
+                    <a href="#">Upcoming Events</a>
+                    <a href="#">Affiliates</a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-column">
+                <div class="discoverShop">
+                  <h4>Discover and Shop</h4>
+                  <a href="#">Gift Cards</a>
+                  <a href="#">Blog</a>
+                  <a href="#">Tastemakers</a>
+                  <a href="#">Mobile Apps</a>
+                  <a href="#">Gift Registries</a>
+                  <a href="#">Wholesale</a>
+                </div>
+
+              </div>
+              <div class="footer-column wide">
+                <div class="rightFirstColumn">
+                  <h4>Get to Know Us</h4>
+                  <a href="#">About</a>
+                  <a href="#">Careers</a>
+                  <a href="#">Press</a>
+                  <a href="#">Developers</a>
+                </div>
+                <div class="rightSecondColumn">
+                  <h4>Follow Etsy</h4>
+                  <a href="#"><img src="#" alt="facebook icon">Facebook</a>
+                  <a href="#"><img src="#" alt="twitter icon">Twitter</a>
+                  <a href="#"><img src="#" alt="pinterest icon">Pinterest</a>
+                  <a href="#"><img src="#" alt="instagram icon">Instagram</a>
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+          
+
+        </div>
+        
+
+      </footer>
 
     </div>
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>

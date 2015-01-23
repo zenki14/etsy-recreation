@@ -1,8 +1,15 @@
-var itemContainer, itemImage, itemTitle, itemShop, itemPrice, itemCurrency, daftListing, hoverImg;
+var itemContainer, itemImage, itemTitle, itemShop, itemPrice, itemCurrency, daftListing, hoverImg, itemLink;
+
 
 itemContainer = $(".itemGrid");
 
 etsyItems.results.forEach(function (item) {
+
+  // item..forEach(function (links) {
+  //   itemLink = "<a class='item-links' href='" + item.url + "'></a>";
+  // });
+
+  // itemLink = "<a class='item-links' href=" + item.url + "></a>";
 
   itemTitle = "<p class='nameText'>" + item.title + "</p>";
 
@@ -19,10 +26,10 @@ etsyItems.results.forEach(function (item) {
 
   itemCurrency = "<p class='isRight'>"  + item.currency_code + "</p>";
 
-  // Build Each Listing
+  // Build itemGrid
   daftListing = "<li class='mainProducts'>" + itemImage + hoverImg + itemTitle + itemShop + itemCurrency + itemPrice +  "</li>";
 
-  // Append Each Item to The Grid
+  
   itemContainer.append(daftListing);
 
 });
