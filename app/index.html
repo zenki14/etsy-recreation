@@ -61,15 +61,52 @@
               <span>to</span>
               <input type="tel" step="any" name="max" value="" placeholder="max" id="max">
             </div>
+            <button class="sidebarPriceBttn">Go</button>
             <hr />
+          <div class="colorSect">
+            <span class="fliterColor">Filter By Color</span>
+            <div class="colorBoxes">
+              <div class="redBox"></div>
+              <div class="orangeBox"></div>
+              <div class="yellowBox"></div>
+              <div class="greenBox"></div>
+              <div class="blueBox"></div>
+              <div class="purpleBox"></div>
+              <div class="blackBox"></div>
+              <div class="whiteBox"></div>
+
+
+            </div>
+          </div>
+          <hr />
+          <div class="orderOptions">
+            <span class="orderOptionTxt">Ordering Options</span>
+            <input type="checkbox" name="giftCards" /> Accepts Etsy Gift Cards
+            <input type="checkbox" name="customizable" /> Customizable
+          </div>
+          <hr />
+          <div class="shopLoc">
+            <span class="locTxt">Shop Location</span>
+            <input type="radio" name="anywhere" /> Anywhere
+            <input type="radio" name="unitedStates" /> United States
+            <a class="customLoc" href="#">Choose a custom location</a>
+          </div>
+          <hr />
           
+
+
+
+          </div>    
         </div>
+
         <ul class="itemGrid">
         </ul>
       </div>
 
     </div>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script src="scripts/etsydata.js"></script>
     <script src="scripts/main.js"></script>
+
 </body>
 </html>
