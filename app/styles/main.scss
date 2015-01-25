@@ -1,7 +1,12 @@
+@import "../../bower_components/bourbon/dist/bourbon";
+@import "../../bower_components/neat/app/assets/stylesheets/neat";
+
+
 * {
   box-sizing:border-box;
   list-style: none;
 }
+
 
 body {
   background:#fafafa;
@@ -11,6 +16,7 @@ body {
 }
 
 .container {
+
   position:relative;
   margin:0 auto;
   padding-top:0;
@@ -22,22 +28,85 @@ body {
   width:100%;
   background:#fff;
   margin-bottom:25px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .logo {
-  display:block;
-  width:100%;
-  height:100%;
-  // background:url(https://www.etsy.com/assets/dist/images/etsylogo.20150106184300.png) no-repeat center center;
-  background-size:100%;
-  color:#d15600;
-  margin-top:2px;
-  padding-top:15px;
-  text-indent:250px;
-  font-size:40px;
-  font-family:"Arial","Helvetica",sans-serif;
-  overflow:hidden;
+  @include span-columns(1);
+  float: left;
 }
+
+.searchFunction {
+  @include span-columns(4);
+  position: relative;
+  float: left;
+  width: 35%;
+  height: 80px;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-style: none;
+  border-width: 0;
+  text-align: left;
+}
+
+.searchBar {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-right: none;
+  border-radius: 3px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 100%;
+  top: 50%;
+  border: 1px solid #CFCBC8;
+  background: #f9f9f8;
+  font-family: Arial,Helvetica,sans-serif;
+  padding: 6px 10px;
+  margin-left: 0;
+  height: 34px;
+  font-size: 14px;
+  vertical-align: middle;
+  color: #333;
+  white-space: nowrap;
+  border-radius: 3px;
+}
+
+button.search {
+  border-radius: 3px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  line-height: 17px;
+  height: 34px;
+  font-family: Arial,Helvetica,sans-serif;
+  padding: 7px 15px 8px;
+  background: #4fa9c6;
+  border-color: #54acc7 #4ca0ba #398a9d;
+  color: #FFFFFF;
+  display: inline-block;
+  border: 1px solid;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0;
+  &:hover {
+    background:#3f98bb;
+  }
+}
+
+.browse-nav {
+  @include span-columns(1);
+}
+
+.helpList {
+  @include span-columns(5);
+  float:right;
+  padding: 0;
+  margin: 0;
+}
+
 
 .mainContent {
   margin-left:auto;
