@@ -7,8 +7,8 @@
  */
 
 var sum = function(a, b) {
-    var sum = a + b;
-    return String(sum + ' (' + a + '+' + b + ')')
+  var sum = a + b;
+  return String(sum + ' (' + a + '+' + b + ')')
 }
 
 console.log(sum(8, 11));
@@ -37,14 +37,14 @@ var runner2 = {
 
 var getAverageTime = function(person) {
     // ... return ...
-    var key,
-        sum = 0,
-        count = 0;
-    for (key in person) {
-        sum += person[key];
-        count++;
-    }
-    return Math.round(sum / count * 10) / 10;
+  var key,
+      sum = 0,
+      count = 0;
+  for (key in person) {
+      sum += person[key];
+      count++;
+  }
+  return Math.round(sum / count * 10) / 10;
 }
 
 console.log(getAverageTime(runner1));
@@ -84,7 +84,7 @@ function addToBank(account, savings, retirement, checking) {
 
 function getSumOfAccounts(account) {
     // return ...
-    return account.checking + account.savings + account.retirement;
+  return account.checking + account.savings + account.retirement;
 }
 
 addToBank(TimsBankAccount, 100, 10, 1);
