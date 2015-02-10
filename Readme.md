@@ -1,3 +1,4 @@
-## Yo, I'm a Readme
+This was a recreation of the Etsy home page.
 
-You should probably update me so people looking at your code have an idea what it is being used for :)
+The idea was to used appended information from the Esty API json and populate a list in the dom.
+
